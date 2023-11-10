@@ -1,0 +1,15 @@
+--name raft-things-sintel-kubric-splitted-occlusion-uncertainty-non-occluded-base-sintel
+--stage sintel_things_kubric_train_subsplit
+--validation sintel_val_subsplit
+--occlusion_module separate_with_uncertainty
+--freeze_optical_flow_training
+--uncertainty_loss huber_non_occluded
+--freeze_features_training
+--restore_ckpt models/raft-sintel.pth
+--num_steps 50000
+--batch_size 6
+--lr 0.000125
+--image_size 368 768
+--wdecay 0.00001
+--gamma=0.85
+--gpus 1
