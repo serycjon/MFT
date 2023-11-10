@@ -43,5 +43,5 @@ Our modifications (~OcclusionAndUncertaintyBlock~ and its integration in ~raft.p
 
 ** Acknowledgments
 This work was supported by Toyota Motor Europe,
-by the Grant Agency of the Czech Technical University in Prague, grant No.~SGS23/173/OHK3/3T/13~, and
+by the Grant Agency of the Czech Technical University in Prague, grant No. ~SGS23/173/OHK3/3T/13~, and
 by the Research Center for Informatics project ~CZ.02.1.01/0.0/0.0/16_019/0000765~ funded by OP VVV.
