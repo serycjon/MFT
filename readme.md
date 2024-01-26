@@ -6,6 +6,8 @@ Official implementation of the MFT tracker from the paper:
 
 [Michal Neoral](https://scholar.google.com/citations?user=fK9nkmQAAAAJ&hl=en&oi=ao), [Jonáš Šerých](https://cmp.felk.cvut.cz/~serycjon/), [Jiří Matas](https://cmp.felk.cvut.cz/~matas/): "**MFT: Long-Term Tracking of Every Pixel**", WACV 2024
 
+![demo_out](https://cmp.felk.cvut.cz/~serycjon/MFT/visuals/demo_out.gif)
+
 Please cite our paper, if you use any of this.
 
     @inproceedings{neoral2024mft,
