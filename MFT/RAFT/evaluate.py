@@ -10,12 +10,12 @@ import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
-from RAFT.core import datasets
-from RAFT.core.utils import flow_viz
-from RAFT.core.utils import frame_utils
+from MFT.RAFT.core import datasets
+from MFT.RAFT.core.utils import flow_viz
+from MFT.RAFT.core.utils import frame_utils
 
-from RAFT.core.raft import RAFT
-from RAFT.core.utils.utils import InputPadder, forward_interpolate
+from MFT.RAFT.core.raft import RAFT
+from MFT.RAFT.core.utils.utils import InputPadder, forward_interpolate
 
 
 @torch.no_grad()

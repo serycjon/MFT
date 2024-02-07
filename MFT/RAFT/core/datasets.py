@@ -216,6 +216,8 @@ class FlowDataset(data.Dataset):
                  'extra_info': self.extra_info}
         if additional_files is not None:
             files.update(additional_files)
+        file_path = Path(file_path)
+        file_path.parent.mkdir(parents=True, exist_ok=True)
         with open(file_path, 'wb') as f:
             pk.dump(files, f)
             # np.save(f, files, allow_pickle=True)
@@ -269,7 +271,7 @@ class FlowDataset(data.Dataset):
 
 class KubricDataset(FlowDataset):
     def __init__(self, aug_params=None, split='train',
-                 root='/datagrid/personal/neoral/kubric_movi_e_longterm', load_occlusion=False,
+                 root='datasets/kubric_movi_e_longterm', load_occlusion=False,
                  upsample2=False, correct_flow=False):
         """
         """
@@ -394,7 +396,7 @@ class KubricDataset(FlowDataset):
 
 
 class MpiSintel(FlowDataset):
-    def __init__(self, aug_params=None, split='training', root='/datagrid/public_datasets/Sintel-complete',
+    def __init__(self, aug_params=None, split='training', root='datasets/Sintel-complete',
                  dstype='clean', load_occlusion=False, subsplit=None):
         """
         :param subsplit: None : whole training dataset
@@ -440,7 +442,7 @@ class MpiSintel(FlowDataset):
 
 
 class FlyingChairs(FlowDataset):
-    def __init__(self, aug_params=None, split='train', root='/datagrid/public_datasets/FlyingChairs_release/data'):
+    def __init__(self, aug_params=None, split='train', root='datasets/FlyingChairs_release/data'):
         super(FlyingChairs, self).__init__(aug_params, root=root)
 
         images = sorted(glob(osp.join(root, '*.ppm')))
@@ -456,7 +458,7 @@ class FlyingChairs(FlowDataset):
 
 
 class FlyingThings3D(FlowDataset):
-    def __init__(self, aug_params=None, root='/datagrid/public_datasets/FlyingThings3D',
+    def __init__(self, aug_params=None, root='datasets/FlyingThings3D',
                  dstype='frames_cleanpass', load_occlusion=False):
         super(FlyingThings3D, self).__init__(aug_params, load_occlusion=load_occlusion, root=root)
 
@@ -497,7 +499,7 @@ class FlyingThings3D(FlowDataset):
 
 
 class KITTI(FlowDataset):
-    def __init__(self, aug_params=None, split='training', root='/datagrid/public_datasets/KITTI/basic/'):
+    def __init__(self, aug_params=None, split='training', root='datasets/KITTI/basic/'):
         super(KITTI, self).__init__(aug_params, sparse=True, root=root)
         if split == 'testing':
             self.is_test = True
@@ -518,7 +520,7 @@ class KITTI(FlowDataset):
 
 
 class HD1K(FlowDataset):
-    def __init__(self, aug_params=None, root='/datagrid/public_datasets/HD1K'):
+    def __init__(self, aug_params=None, root='datasets/HD1K'):
         super(HD1K, self).__init__(aug_params, sparse=True, root=root)
 
         seq_ix = 0

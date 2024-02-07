@@ -40,6 +40,11 @@ Simply running:
 should produce a `demo_out` directory with two visualizations.
 
 
+## Training
+
+See [train.org](train.org)
+
+
 ## License
 
 The demo video in `demo_in` was extracted from [youtube](https://www.youtube.com/watch?v=ugsJtsO9w1A).
