@@ -90,7 +90,7 @@ Place it into =datasets/kubric_movi_e_longterm=, it should have structure like:
 
 **** Generating the LongFlow dataset
 We generated the dataset from the kubric [[https://github.com/google-research/kubric/tree/e140e24e078d5e641c4ac10bf25743059bd059ce/challenges/movi#movi-e][MOVi-E]] by computing dense flow between the frame =0000= and all the other frames in each sequence.
-See the =multiflow_from_kubric.py= script that was used to generate the dataset.
+See the [[file:MFT/RAFT/multiflow_from_kubric.py][multiflow_from_kubric.py]] script that was used to generate the dataset (based on [[https://github.com/google-research/kubric/blob/main/challenges/point_tracking/dataset.py][Kubric Point-Tracking Dataset]].
 
 ** Training
 We start the training from the =raft-sintel.pth= checkpoint provided by RAFT authors [[https://www.dropbox.com/s/4j4z58wuv8o0mfz/models.zip][here]]. Place it into the =checkpoints/= directory.
