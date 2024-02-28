@@ -28,7 +28,8 @@ def code_export(path):
            ]
 
     excluded = ['.git', '__pycache__', 'pytracking_old', '.ipynb_checkpoints',
-                'logs',
+                'logs', 'export', 'demo-in', 'demo-out', 'runs', 'train_files_lists',
+                'cache',
                 # RAFT stuff
                 'checkpoints', 'flowou_evals', 'traintxt', 'demo-frames',
                 'experiments']
