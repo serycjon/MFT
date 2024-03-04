@@ -12,7 +12,7 @@ Please cite our paper, if you use any of this.
 
     @inproceedings{neoral2024mft,
                    title={{MFT}: Long-Term Tracking of Every Pixel},
-                   author={Neoral, Michal and {\v{S}}er{\`y}ch, Jon{\'a}{\v{s}} and Matas, Ji{\v{r}}{\'\i}},
+                   author={Neoral, Michal and {\v{S}}er{\'{y}}ch, Jon{\'{a}}{\v{s}} and Matas, Ji{\v{r}}{\'{i}}},
                    journal={arXiv preprint arXiv:2305.12998},
                    year={2023},
     }
