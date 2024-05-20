@@ -34,6 +34,11 @@ The =occlusions_rev= is a revised occlusion annotation marking out-of-view pixel
 
 *** FlyingThings3D
 Place or symlink the [[https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html#downloads][FlyingThings3D dataset]] into =datasets/FlyingThings3D=.
+Additionally, we have used optical flow occlusion masks, available for download from [[https://drive.google.com/file/d/1RYIkmXwXygrm2SHohFNTLXKhaIfnJuDh/view?usp=drive_link][google drive]] or [[https://cmp.felk.cvut.cz/~serycjon/MFT/materials/flying_things_3D_occlusions.tar.gz][MFT website]] (2.3GB).
+The masks were generated a very long time ago by a script which we include in [[generate_occlusion_maps_FlyingThings3D.py]] for documentation.
+It may still be working, but we didn't test it recently.
+Note that the FlyingThings3D authors also provide occlusion maps in the newer FlyingThings3D dataset subset ("DispNet/FlowNet2.0 dataset subsets" on the download page).
+Feel free to create a pull request if you implement the dataloader for the FT3D subset.
 
 The =datasets/FlyingThings3D= should have structure something like:
 #+BEGIN_EXAMPLE
