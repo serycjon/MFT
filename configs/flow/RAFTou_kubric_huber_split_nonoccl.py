@@ -1,6 +1,6 @@
 from pathlib import Path
-from MFT.config import Config
-from MFT.raft import RAFTWrapper
+from mft.MFT.config import Config
+from mft.MFT.raft import RAFTWrapper
 
 
 class AttrDict(dict):
@@ -22,7 +22,7 @@ def get_config():
     }
     conf.raft_params = AttrDict(**raft_kwargs)
     # original model location:
-    conf.model = 'checkpoints/raft-things-sintel-kubric-splitted-occlusion-uncertainty-non-occluded-base-sintel.pth'
+    conf.model = 'external/manual_repos/MFT/mft/checkpoints/raft-things-sintel-kubric-splitted-occlusion-uncertainty-non-occluded-base-sintel.pth'
 
     conf.flow_iters = 12
 

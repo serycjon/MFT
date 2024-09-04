@@ -17,9 +17,9 @@ except ImportError:
     pass
 
 
-import MFT.utils.geom_utils as gu
-from MFT.utils.rand_utils import tmp_np_seed
-from MFT.utils.interpolation import FlowInterpolator
+import mft.MFT.utils.geom_utils as gu
+from mft.MFT.utils.rand_utils import tmp_np_seed
+from mft.MFT.utils.interpolation import FlowInterpolator
 
 GREEN = (0, 255, 0)
 BLUE = (255, 0, 0)

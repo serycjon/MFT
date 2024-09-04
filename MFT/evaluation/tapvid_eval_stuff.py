@@ -47,7 +47,7 @@ from scipy import io
 # from tapnet import tapnet_model
 from types import SimpleNamespace
 
-from MFT.utils.misc import parse_scale_WH
+from mft.MFT.utils.misc import parse_scale_WH
 try:
     from tapnet.utils import transforms
 except ImportError:

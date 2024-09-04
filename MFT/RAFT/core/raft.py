@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from MFT.RAFT.core.update import BasicUpdateBlock, SmallUpdateBlock, OcclusionAndUncertaintyBlock
-from MFT.RAFT.core.extractor import BasicEncoder, SmallEncoder
-from MFT.RAFT.core.corr import CorrBlock, AlternateCorrBlock
-from MFT.RAFT.core.utils.utils import coords_grid, upflow8, upsample8
+from mft.MFT.RAFT.core.update import BasicUpdateBlock, SmallUpdateBlock, OcclusionAndUncertaintyBlock
+from mft.MFT.RAFT.core.extractor import BasicEncoder, SmallEncoder
+from mft.MFT.RAFT.core.corr import CorrBlock, AlternateCorrBlock
+from mft.MFT.RAFT.core.utils.utils import coords_grid, upflow8, upsample8
 
 try:
     autocast = torch.cuda.amp.autocast

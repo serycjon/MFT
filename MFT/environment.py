@@ -1,7 +1,7 @@
 import importlib
 import os
 
-from MFT import code_path
+from mft.MFT import code_path
 
 
 class EnvSettings:
@@ -27,7 +27,7 @@ def create_default_local_file():
     with open(path, 'w') as f:
         settings = EnvSettings()
 
-        f.write('from MFT.environment import EnvSettings\n\n')
+        f.write('from mft.MFT.environment import EnvSettings\n\n')
         f.write('def local_env_settings():\n')
         f.write('    settings = EnvSettings()\n\n')
         f.write('    # Set your local paths here.\n\n')
@@ -46,7 +46,7 @@ def create_default_local_file():
 
 
 def env_settings():
-    env_module_name = 'MFT.local_environment'
+    env_module_name = 'mft.MFT.local_environment'
     try:
         env_module = importlib.import_module(env_module_name)
         return env_module.local_env_settings()

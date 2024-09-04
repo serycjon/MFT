@@ -16,7 +16,7 @@ import torch
 from PIL import Image
 from PIL.PngImagePlugin import PngInfo
 import shutil
-from MFT.utils.misc import ensure_numpy
+from mft.MFT.utils.misc import ensure_numpy
 import tqdm
 
 import logging

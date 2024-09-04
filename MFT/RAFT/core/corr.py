@@ -1,6 +1,6 @@
 import torch
 import torch.nn.functional as F
-from MFT.RAFT.core.utils.utils import bilinear_sampler
+from mft.MFT.RAFT.core.utils.utils import bilinear_sampler
 import einops
 
 try:

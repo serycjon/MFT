@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import einops
 
 from scipy.interpolate import RegularGridInterpolator
-from MFT.utils.geom_utils import torch_get_featuremap_coords
+from mft.MFT.utils.geom_utils import torch_get_featuremap_coords
 
 
 def chain_flow(flow_AB, flow_BC):

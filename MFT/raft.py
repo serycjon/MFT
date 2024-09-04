@@ -3,11 +3,11 @@ import torch.nn.functional as F
 import einops
 import logging
 
-from MFT.utils.geom_utils import torch_get_featuremap_coords, get_featuremap_coords
-from MFT.utils.misc import ensure_numpy
+from mft.MFT.utils.geom_utils import torch_get_featuremap_coords, get_featuremap_coords
+from mft.MFT.utils.misc import ensure_numpy
 
-from MFT.RAFT.core.raft import RAFT  # noqa: E402
-from MFT.RAFT.core.utils.utils import InputPadder  # noqa: E402
+from mft.MFT.RAFT.core.raft import RAFT  # noqa: E402
+from mft.MFT.RAFT.core.utils.utils import InputPadder  # noqa: E402
 
 logger = logging.getLogger(__name__)
 

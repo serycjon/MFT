@@ -4,8 +4,8 @@ import numpy as np
 import torch
 from types import SimpleNamespace
 import logging
-from MFT.results import FlowOUTrackingResult
-from MFT.utils.timing import general_time_measurer
+from mft.MFT.results import FlowOUTrackingResult
+from mft.MFT.utils.timing import general_time_measurer
 
 logger = logging.getLogger(__name__)
 
