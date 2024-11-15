@@ -1,7 +1,9 @@
-
 # MFT: Long-Term Tracking of Every Pixel
 
+## A new [MFTIQ](https://github.com/serycjon/MFTIQ) tracker has been published, check it out!
+
 [Project Page](https://cmp.felk.cvut.cz/~serycjon/MFT/)
+
 Official implementation of the MFT tracker from the paper:
 
 [Michal Neoral](https://scholar.google.com/citations?user=fK9nkmQAAAAJ&hl=en&oi=ao), [Jonáš Šerých](https://cmp.felk.cvut.cz/~serycjon/), [Jiří Matas](https://cmp.felk.cvut.cz/~matas/): "**MFT: Long-Term Tracking of Every Pixel**", WACV 2024
@@ -10,12 +12,13 @@ Official implementation of the MFT tracker from the paper:
 
 Please cite our paper, if you use any of this.
 
-    @inproceedings{neoral2024mft,
-                   title={{MFT}: Long-Term Tracking of Every Pixel},
-                   author={Neoral, Michal and {\v{S}}er{\'{y}}ch, Jon{\'{a}}{\v{s}} and Matas, Ji{\v{r}}{\'{i}}},
-                   journal={arXiv preprint arXiv:2305.12998},
-                   year={2023},
-    }
+	@inproceedings{neoral2024mft,
+	  title={{MFT}: Long-term tracking of every pixel},
+	  author={Neoral, Michal and Serych, Jonas and Matas, Jiri},
+	  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+	  pages={6837--6847},
+	  year={2024},
+	}
 
 
 ## Install
